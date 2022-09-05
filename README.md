@@ -1,2 +1,2 @@
-# jmdsum
-JMDSum allows you to calculate the unique fingerprint of a file.
+# JMDSum
+JMDSum lets you calculate the unique checksum of a file.
