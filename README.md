@@ -14,6 +14,8 @@ cd jmdsum
     ruby app/jmdsum.rb
     ruby app/secrets.rb
     ruby app/files.rb
+    ruby app/points.rb
+    ruby app/boards.rb
     exit
   ./devops/compose/down.sh
   ./devops/compose/delete.sh
