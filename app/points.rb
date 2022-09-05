@@ -3,7 +3,7 @@ def encode max
   jmdsum = 0
 
   loop do
-    puts "Type new point value or less than 0 ou greater than #{max} to exit:"
+    puts "Type new point value, or less than 0 or, greater than #{max} to exit:"
     point = gets.to_i
 
     if (0..max).include? point 
