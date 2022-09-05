@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build:
+      args:
+        ARG_LINUX_LOCALE: en_US.UTF-8
+        ARG_RUBY_VERSION: 3.1.2
+      context: .
+    working_dir: /home/user/jmdsum
+    tty: true
+    volumes:
+      - app_local:/usr/local
+      - ~/.ssh:/home/user/.ssh
+      - ~/.gitconfig:/home/user/.gitconfig
+      - ~/.bash_history:/home/user/.bash_history
+      - .:/home/user/jmdsum
+volumes:
+  app_local:
